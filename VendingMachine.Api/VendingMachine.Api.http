@@ -1,0 +1,6 @@
+@VendingMachine.Api_HostAddress = http://localhost:32772
+
+GET {{VendingMachine.Api_HostAddress}}/api/Product/Get/4
+Accept: application/json
+
+###
