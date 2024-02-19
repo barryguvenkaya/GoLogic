@@ -41,7 +41,7 @@ Once the application is running, users can interact with the virtual vending mac
 - `POST /api/balance/deposit`: Add funds to the virtual wallet.
 - `POST /api/transaction/purchase`: Purchase an item from the vending machine.
 
-For detailed API documentation, refer to the [OpenAPI YAML specs]([www.google.com](https://app.swaggerhub.com/apis-docs/BARRYGUVENKAYA/vending-machine_api/1.0#/)).
+For detailed API documentation, refer to the [OpenAPI YAML specs](https://app.swaggerhub.com/apis-docs/BARRYGUVENKAYA/vending-machine_api/1.0#/).
 
 ## Production Readiness
 
