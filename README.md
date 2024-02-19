@@ -54,6 +54,8 @@ While the project serves as a functional prototype, it's not yet ready for produ
 - **No health checks:** Health checks are essential for monitoring application health and availability.
 - **Unimplemented options configuration and caching:** These features are important for performance optimization and configuration flexibility.
 
+**Note:** Integration tests would be beneficial to ensure the reliability and robustness of the application. However, due to time constraints, they have not been provided in this version.
+
 ## Nice-to-Have Features for Future
 
 In future iterations, consider adding the following features to enhance the project:
