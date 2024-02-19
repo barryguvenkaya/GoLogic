@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace VendingMachine.Application.Transaction.Queries
+namespace VendingMachine.Application.Transaction.Queries.GetTransactionsByUserId
 {
     public class GetTransactionsByUserIdQueryValidator : AbstractValidator<GetTransactionsByUserIdQuery>
     {

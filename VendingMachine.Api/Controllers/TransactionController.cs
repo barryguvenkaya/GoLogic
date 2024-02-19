@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using VendingMachine.Application.Transaction.Commands.Purchase;
 using VendingMachine.Application.Transaction.Dtos;
-using VendingMachine.Application.Transaction.Queries;
+using VendingMachine.Application.Transaction.Queries.GetTransactionsByUserId;
 
 namespace VendingMachine.Api.Controllers
 {
@@ -23,13 +23,13 @@ namespace VendingMachine.Api.Controllers
             return Ok(result);
         }
 
-        [ProducesResponseType(typeof(List<TransactionDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(List<ReceiptDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [HttpGet("{userId}")]
-        public async Task<ActionResult<List<TransactionDto>>> Get([FromRoute] int userId, CancellationToken cancellationToken = default)
+        public async Task<ActionResult<List<ReceiptDto>>> GetReceipt([FromRoute] int userId, CancellationToken cancellationToken = default)
         {
             var result = await Mediator.Send(new GetTransactionsByUserIdQuery(userId), cancellationToken);
             return Ok(result);

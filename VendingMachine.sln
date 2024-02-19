@@ -5,11 +5,17 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachine.Api", "VendingMachine.Api\VendingMachine.Api.csproj", "{2AFCB183-69FE-409E-90BD-A9BD44CA4FD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine.Application", "VendingMachine.Application\VendingMachine.Application.csproj", "{DB981D9A-41F4-4DE2-BBF3-9E33073B9408}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachine.Application", "VendingMachine.Application\VendingMachine.Application.csproj", "{DB981D9A-41F4-4DE2-BBF3-9E33073B9408}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine.Infrastructure", "VendingMachine.Infrastructure\VendingMachine.Infrastructure.csproj", "{6E0FFABF-4281-4777-8112-1C33CD57FA30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachine.Infrastructure", "VendingMachine.Infrastructure\VendingMachine.Infrastructure.csproj", "{6E0FFABF-4281-4777-8112-1C33CD57FA30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine.Api.Client", "VendingMachine.Api.Client\VendingMachine.Api.Client.csproj", "{8F9F3A4D-1B26-4705-99EC-35F936687587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VendingMachine.Api.Client", "VendingMachine.Api.Client\VendingMachine.Api.Client.csproj", "{8F9F3A4D-1B26-4705-99EC-35F936687587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachine.Application.UnitTests", "VendingMachine.Application.UnitTests\VendingMachine.Application.UnitTests.csproj", "{C6FA53AB-C3AF-414C-AADB-0CD47AEF64AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B6CD3496-A703-4112-BAB1-AA940E830C81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AFCC19B7-F296-4FB6-B5BF-23117F574759}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +39,20 @@ Global
 		{8F9F3A4D-1B26-4705-99EC-35F936687587}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F9F3A4D-1B26-4705-99EC-35F936687587}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F9F3A4D-1B26-4705-99EC-35F936687587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FA53AB-C3AF-414C-AADB-0CD47AEF64AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FA53AB-C3AF-414C-AADB-0CD47AEF64AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FA53AB-C3AF-414C-AADB-0CD47AEF64AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FA53AB-C3AF-414C-AADB-0CD47AEF64AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2AFCB183-69FE-409E-90BD-A9BD44CA4FD3} = {B6CD3496-A703-4112-BAB1-AA940E830C81}
+		{DB981D9A-41F4-4DE2-BBF3-9E33073B9408} = {B6CD3496-A703-4112-BAB1-AA940E830C81}
+		{6E0FFABF-4281-4777-8112-1C33CD57FA30} = {B6CD3496-A703-4112-BAB1-AA940E830C81}
+		{8F9F3A4D-1B26-4705-99EC-35F936687587} = {B6CD3496-A703-4112-BAB1-AA940E830C81}
+		{C6FA53AB-C3AF-414C-AADB-0CD47AEF64AA} = {AFCC19B7-F296-4FB6-B5BF-23117F574759}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EE86DDF0-9952-4814-AC27-46FC91FAA476}

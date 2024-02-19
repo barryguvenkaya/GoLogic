@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 
 namespace VendingMachine.Application.Behaviours
 {
-    public class UnhandledExceptionBehaviour<TRequest, TResponse>(ILogger<TRequest> logger) : IPipelineBehavior<TRequest, TResponse>
+    public class UnhandledExceptionBehaviour<TRequest, TResponse>(ILogger<TRequest> logger) : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
     {
         private readonly ILogger<TRequest> _logger = logger;
 

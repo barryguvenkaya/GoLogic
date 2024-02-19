@@ -1,6 +1,9 @@
 ﻿namespace VendingMachine.Application.Transaction.Dtos
 {
-    public class TransactionDto
+    /// <summary>
+    /// Receipt that containts transactions made by the user
+    /// </summary>
+    public class ReceiptDto
     {
         /// <summary>
         /// Name of the Product involved in the transaction.
