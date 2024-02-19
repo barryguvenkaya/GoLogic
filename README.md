@@ -47,12 +47,12 @@ For detailed API documentation, refer to the [OpenAPI YAML specs](https://app.sw
 
 While the project serves as a functional prototype, it's not yet ready for production due to the following reasons:
 
-- Lack of authentication: Authentication is essential for securing access to the API endpoints.
-- Missing pagination: Pagination is necessary to efficiently handle large datasets.
-- Use of EF Core in-memory database: In-memory databases are suitable for prototyping but not for production use.
-- Absence of EF entity configurations and relations: Proper database configurations and relationships are required for scalability and maintainability.
-- No health checks: Health checks are essential for monitoring application health and availability.
-- Unimplemented options configuration and caching: These features are important for performance optimization and configuration flexibility.
+- **Lack of authentication:** Authentication is essential for securing access to the API endpoints.
+- **Missing pagination:** Pagination is necessary to efficiently handle large datasets.
+- **Use of EF Core in-memory database:** In-memory databases are suitable for prototyping but not for production use.
+- **Absence of EF entity configurations and relations:** Proper database configurations and relationships are required for scalability and maintainability.
+- **No health checks:** Health checks are essential for monitoring application health and availability.
+- **Unimplemented options configuration and caching:** These features are important for performance optimization and configuration flexibility.
 
 ## Nice-to-Have Features for Future
 
