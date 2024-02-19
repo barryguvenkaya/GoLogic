@@ -1,5 +1,9 @@
 # Virtual Vending Machine
 
+## Technical Track
+
+This project was completed as part of the back-end track of the technical specification provided. As such, it focuses on building a robust and well-documented API, following best practices in API design, documentation, and testing.
+
 ## Introduction
 
 This project implements a virtual vending machine using **Clean Architecture** and **CQRS** principles. It allows users to browse a list of products, deposit balance, and purchase items. Users can then view their purchased items and receive change if applicable.
